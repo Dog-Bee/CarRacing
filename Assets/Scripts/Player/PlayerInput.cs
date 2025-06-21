@@ -7,6 +7,7 @@ public class PlayerInput
     private Vector2 _move;
     public float Throttle => _move.y;
     public float Steering => _move.x;
+    public bool IsDrifting => _controls.Move.Drift.IsPressed();
 
     private PlayerControl _controls;
 

@@ -1,14 +1,19 @@
 using UnityEngine;
 using Zenject;
+using Vector3 = UnityEngine.Vector3;
 
-[RequireComponent(typeof(Rigidbody))] 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] private Transform sphereTransform;
+    [SerializeField] private Transform surfaceTransform;
     [SerializeField] private Rigidbody rigidBody;
     [SerializeField] private VehicleView view;
 
     private PlayerInput _input;
     private VehicleConfig _config;
+
+    private float _targetSpeed, _currentSpeed;
+    private float _targetRotation, _currentRotation;
     
     [Inject] 
     private void Construct(PlayerInput input, VehicleConfig config)
@@ -17,23 +22,65 @@ public class PlayerController : MonoBehaviour
         _config = config;
         
         rigidBody.drag = _config.Drag;
-        view.Init(_config.WheelRotationSpeed, _config.TiltAmount, _config.SteeringWheelRotationSpeed,_config.WheelRotationAngle);
+        view.Init(_config.WheelRotationSpeed, _config.TiltAmount,_config.WheelRotationAngle);
+    }
+
+    private void Update()
+    {
+        Calculations();
+        view.UpdateView(_input.Throttle, _input.Steering, rigidBody.velocity.magnitude);
     }
 
     private void FixedUpdate()
-    {
-        Vector3 forwardForce = transform.forward * (_input.Throttle * _config.Acceleration);
+    {        
+        transform.position = sphereTransform.position-_config.FollowOffset;
+        ForceCalculations();
+        UpdateRotationBySurface();
 
-        if (rigidBody.velocity.magnitude < _config.MaxSpeed)
+        if (rigidBody.velocity.magnitude > 0.1f)
         {
-            rigidBody.AddForce(forwardForce, ForceMode.Acceleration);
+            /*Quaternion deltaRotation = Quaternion.AngleAxis(_currentRotation, transform.up);
+            transform.rotation = Quaternion.Lerp(transform.rotation, deltaRotation * transform.rotation, Time.fixedDeltaTime * 5f);*/
+            Vector3 targetEuler =  transform.eulerAngles + Vector3.up * _currentRotation;
+            transform.eulerAngles = Vector3.Lerp(transform.eulerAngles, targetEuler, Time.fixedDeltaTime*5f);
         }
         
-        float turnAmount = _input.Steering * _config.TurnSpeed * Time.fixedDeltaTime;
-        Quaternion turnOffset = Quaternion.Euler(0,turnAmount,0);
-        rigidBody.MoveRotation(rigidBody.rotation * turnOffset);
+
+    }
+
+    private void UpdateRotationBySurface()
+    {
+       if(Physics.Raycast(transform.position,Vector3.down,out RaycastHit hit,1,_config.GroundMask))
+       {
+          surfaceTransform.up = Vector3.Lerp(surfaceTransform.up, hit.normal, Time.deltaTime * 8f);
+          surfaceTransform.Rotate(0,transform.eulerAngles.y,0);
+       }
         
-        view.UpdateView(_input.Throttle, _input.Steering, rigidBody.velocity.magnitude);
+    }
+
+    private void ForceCalculations()
+    {
+        Vector3 forwardForce = surfaceTransform.forward *_currentSpeed;
+        Vector3 sideForce = -surfaceTransform.right *_currentRotation;
+        
+        
+        if (rigidBody.velocity.magnitude < _config.MaxSpeed)
+        {
+            rigidBody.AddForce(forwardForce + sideForce, ForceMode.Acceleration);
+        }
+        
+		rigidBody.AddForce(Vector3.down*_config.Gravity, ForceMode.Acceleration);
+    }
+
+    private void Calculations()
+    {
+        _targetSpeed = _input.Throttle * _config.Acceleration + (Mathf.Abs(_input.Steering)*_config.Acceleration);
+        _targetRotation = _input.Steering * _config.TurnSpeed;
+
+        _currentSpeed = Mathf.SmoothStep(_currentSpeed, _targetSpeed, Time.deltaTime * 12f);
+        _targetSpeed = 0;
+        _currentRotation = Mathf.Lerp(_currentRotation, _targetRotation, Time.deltaTime * 4f);
+        _targetRotation = 0;
     }
     
 }

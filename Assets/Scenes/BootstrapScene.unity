@@ -275,7 +275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneLoader: {fileID: 1986684137}
-  sceneToLoad: GameScene
+  sceneToLoad: Map1
 --- !u!4 &1986684139
 Transform:
   m_ObjectHideFlags: 0
