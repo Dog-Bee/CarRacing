@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fc10cba6a2662d4ebd3314e60b497be, type: 3}
   m_Name: VehicleConfig
   m_EditorClassIdentifier: 
-  <MaxSpeed>k__BackingField: 80
-  <Acceleration>k__BackingField: 81.4
-  <TurnSpeed>k__BackingField: 12
+  <MaxSpeed>k__BackingField: 200
+  <Acceleration>k__BackingField: 120
+  <TurnSpeed>k__BackingField: 20
   <Drag>k__BackingField: 3
-  <Gravity>k__BackingField: 20
+  <Gravity>k__BackingField: 60
   <SideFriction>k__BackingField: 0
   <WheelRotationSpeed>k__BackingField: 360
   <WheelRotationAngle>k__BackingField: 25

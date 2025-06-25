@@ -5,6 +5,10 @@ public class VehicleView : MonoBehaviour
 {
    [SerializeField] private Transform body;
    [SerializeField] private List<Transform> frontWheels;
+   [SerializeField] private List<Transform> wheels;
+   [SerializeField] private ParticleSystem coinParticle;
+   [SerializeField] private List<ParticleSystem> calmTubeParticles;
+   [SerializeField] private List<ParticleSystem> boostTubeParticles;
 
    private float _wheelRotationSpeed;
    private float _tiltAmount;
@@ -19,6 +23,21 @@ public class VehicleView : MonoBehaviour
       
    }
 
+   public void Boost(bool boost)
+   {
+      if (boost && !boostTubeParticles[0].isPlaying)
+      {
+         boostTubeParticles.ForEach(p=>p.Play());
+         calmTubeParticles.ForEach(p=>p.Stop());
+      }
+
+      if (!boost && !calmTubeParticles[0].isPlaying)
+      {
+         calmTubeParticles.ForEach(p=>p.Play());
+         boostTubeParticles.ForEach(p=>p.Stop());
+      }
+   }
+
    public void UpdateView(float throttle, float steering, float speed)
    {
       float direction =speed* _wheelRotationSpeed*Time.fixedDeltaTime* Mathf.Sign(throttle);
@@ -29,8 +48,6 @@ public class VehicleView : MonoBehaviour
       float targetZ = -throttle * _tiltAmount;
       targetTilt.eulerAngles = new Vector3(targetX,0,targetZ);
       body.localRotation = Quaternion.Lerp(body.localRotation,targetTilt, Time.fixedDeltaTime *5f);
-      
-      
    }
 
    public void FrontWheelRotation(float rotationDirection,float steering)
@@ -41,7 +58,11 @@ public class VehicleView : MonoBehaviour
       for (int i = 0; i < frontWheels.Count; i++)
       {
          frontWheels[i].localRotation = Quaternion.Euler(0,targetY,0);
-         frontWheels[i].Rotate(Vector3.forward * rotationDirection);
+      }
+
+      for (int i = 0; i < wheels.Count; i++)
+      {
+         wheels[i].Rotate(Vector3.forward*rotationDirection*10);
       }
    }
 }
