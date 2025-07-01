@@ -10,6 +10,7 @@ public class VehicleConfig : ScriptableObject
     [field: SerializeField] public float Drag { get; private set; } = .5f;
     [field: SerializeField] public float Gravity{ get; private set; } = 20f;
     [field: SerializeField] public float SideFriction{ get; private set; } = .1f;
+    [field: SerializeField] public float ReachDistance{ get; private set; } = 15f;
 
     [field: Header("Visual Config")]
     [field: SerializeField] public float WheelRotationSpeed { get; private set; } = 360f;

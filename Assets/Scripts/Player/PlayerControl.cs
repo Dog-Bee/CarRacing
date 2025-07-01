@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform surfaceTransform;
     [SerializeField] private Rigidbody rigidBody;
     [SerializeField] private VehicleView view;
+    [SerializeField] private ARaceTracker raceTracker;
 
     private PlayerInput _input;
     private VehicleConfig _config;
@@ -18,6 +19,8 @@ public class PlayerController : MonoBehaviour
     private bool _isGrounded;
     
     public float CurrentSpeed => _currentSpeed;
+    public float MaxSpeed => _config.Acceleration *3;
+    public float BaseSpeed => _config.Acceleration * 2;
     
     [Inject] 
     private void Construct(PlayerInput input, VehicleConfig config)
@@ -27,6 +30,7 @@ public class PlayerController : MonoBehaviour
         
         rigidBody.drag = _config.Drag;
         view.Init(_config.WheelRotationSpeed, _config.TiltAmount,_config.WheelRotationAngle);
+        raceTracker.ReachDistance = _config.ReachDistance;
     }
 
     private void Start()
@@ -71,7 +75,7 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 forwardForce = surfaceTransform.forward *_currentSpeed;
         Vector3 sideForce = -surfaceTransform.right *_currentRotation;
-        float speedLimit = _input.IsDrifting ? _config.Acceleration * 2 * 2 : _config.Acceleration * 2;
+        float speedLimit = _input.IsDrifting ? MaxSpeed : BaseSpeed;
         
         if (rigidBody.velocity.magnitude < speedLimit)
         {

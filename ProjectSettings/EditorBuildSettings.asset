@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Map 2 Isometric.unity
     guid: 0c737656736ea8c468d58eedae96eba7
+  - enabled: 1
+    path: Assets/Scenes/Map 3 Isometric.unity
+    guid: 5974b995644b9c94882a8d063dbe8457
   m_configObjects: {}

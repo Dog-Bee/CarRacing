@@ -6,8 +6,7 @@ public class BotController : MonoBehaviour
     [SerializeField] private Transform surfaceTransform;
     [SerializeField] private Transform sphereTransform;
     [SerializeField]  private Rigidbody rigidBody;
-    [SerializeField] private ACheckpointController checkpointController;
-    [SerializeField] private float reachDistance = 4;
+    [SerializeField] private ARaceTracker raceTracker;
 
     private float _acceleration;
     private float _turnSpeed;
@@ -16,45 +15,30 @@ public class BotController : MonoBehaviour
     private Vector3 _followOffset;
     private LayerMask _groundLayer;
     
-    
-    private VehicleConfig _vehicleConfig;
-    
     private float _currentRotation, _targetRotation;
     private float _currentSpeed, _targetSpeed;
     
     [Inject]
     private void Construct(VehicleConfig vehicleConfig, CheckpointBehaviour checkpointBehaviour)
     {
-        _vehicleConfig = vehicleConfig;
-        
         _acceleration = vehicleConfig.Acceleration;
         _turnSpeed = vehicleConfig.TurnSpeed;
         _maxSpeed = vehicleConfig.MaxSpeed;
         _gravity = vehicleConfig.Gravity;
         _groundLayer = vehicleConfig.GroundMask;
         _followOffset = vehicleConfig.FollowOffset;
+        raceTracker.ReachDistance = vehicleConfig.ReachDistance;
     }
 
     private void FixedUpdate()
     {
+        if (raceTracker.IsStop) return;
         transform.position = sphereTransform.position - _followOffset;
         Calculations();
-        UpdateTargetDestination();
         ForceCalculations();
         UpdateRotationBySurface();
         UpdateMainRotation();
     }
-
-    private void UpdateTargetDestination()
-    {
-        float distance = Vector3.Distance(transform.position, checkpointController.CurrentCheckpoint.position);
-        if (distance < reachDistance)
-        {
-            checkpointController.OnTrigger();
-        }
-            
-    }
-
     private void UpdateMainRotation()
     {
         if (rigidBody.velocity.magnitude > 0.1f)
@@ -88,11 +72,11 @@ public class BotController : MonoBehaviour
 
     private void Calculations()
     {
-        Vector3 direction = (checkpointController.CurrentCheckpoint.position - transform.position).normalized;
+        Vector3 direction = (raceTracker.CurrentCheckpoint - transform.position).normalized;
         float angle = Vector3.SignedAngle(transform.forward,direction,Vector3.up);
         
-        _targetSpeed = _acceleration;
-        _currentSpeed = Mathf.SmoothStep(_currentSpeed, _targetSpeed, Time.deltaTime*12f);
+        _targetSpeed = _acceleration*.7f;
+        _currentSpeed = Mathf.SmoothStep(_currentSpeed, _targetSpeed, Time.deltaTime*6f);
         _targetSpeed = 0;
         
         _targetRotation = Mathf.Clamp(angle, -1, 1)*_turnSpeed;

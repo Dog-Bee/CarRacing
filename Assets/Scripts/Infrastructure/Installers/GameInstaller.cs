@@ -11,6 +11,7 @@ namespace Infrastructure.Installers
         {
             Container.BindInstance(vehicleConfig).AsSingle();
             Container.BindInstance(checkpointBehaviour).AsSingle();
+            Container.Bind<LeaderboardService>().AsSingle();
         }
     }
 }

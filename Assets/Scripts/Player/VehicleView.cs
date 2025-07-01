@@ -42,7 +42,7 @@ public class VehicleView : MonoBehaviour
    {
       float direction =speed* _wheelRotationSpeed*Time.fixedDeltaTime* Mathf.Sign(throttle);
       
-      FrontWheelRotation(direction,steering);
+      FrontWheelRotation(direction,steering,throttle);
       
       float targetX = -steering * _tiltAmount;
       float targetZ = -throttle * _tiltAmount;
@@ -50,10 +50,10 @@ public class VehicleView : MonoBehaviour
       body.localRotation = Quaternion.Lerp(body.localRotation,targetTilt, Time.fixedDeltaTime *5f);
    }
 
-   public void FrontWheelRotation(float rotationDirection,float steering)
+   public void FrontWheelRotation(float rotationDirection,float steering,float throttle)
    {
       if (frontWheels.Count < 2) return;
-      float targetY = steering * _wheelRotationAngle;
+      float targetY = steering * throttle  * _wheelRotationAngle;
       
       for (int i = 0; i < frontWheels.Count; i++)
       {

@@ -29,7 +29,6 @@ public class SceneLoader : MonoBehaviour
         }
         loadOperation.allowSceneActivation = true;
 
-        Debug.Log(_prevScene);
         if (_prevScene != "")
         {
             UnloadScene(_prevScene);
