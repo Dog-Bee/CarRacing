@@ -19,7 +19,7 @@ public class SceneLoader : MonoBehaviour
         _prevScene = _currentScene;
         _currentScene = sceneName;
         
-        AsyncOperation loadOperation = SceneManager.LoadSceneAsync(sceneName,LoadSceneMode.Additive);
+        AsyncOperation loadOperation = SceneManager.LoadSceneAsync(_currentScene,LoadSceneMode.Additive);
         
         loadOperation.allowSceneActivation = false;
         
@@ -28,6 +28,8 @@ public class SceneLoader : MonoBehaviour
             yield return null;
         }
         loadOperation.allowSceneActivation = true;
+            yield return null;
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(_currentScene));
 
         if (_prevScene != "")
         {

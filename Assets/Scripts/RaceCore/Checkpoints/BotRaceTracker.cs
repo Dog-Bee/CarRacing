@@ -4,7 +4,6 @@ using Zenject;
 public class BotRaceTracker : ARaceTracker
 {
     private bool _isFinish;
-    /*
     [Inject] private void Construct(CheckpointBehaviour checkpointBehaviour,LeaderboardService leaderboardService)
     {
         _checkpointBehaviour = checkpointBehaviour;
@@ -15,7 +14,6 @@ public class BotRaceTracker : ARaceTracker
         Name = "BotRaceTracker";
         _isPlayer = false;
     }
-    */
     
     protected override void OnTrigger()
     {

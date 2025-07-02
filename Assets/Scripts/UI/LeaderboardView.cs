@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -15,6 +16,11 @@ public class LeaderboardView : MonoBehaviour
    [Inject] private void Construct(LeaderboardService leaderboardService)
    {
       _leaderboardService = leaderboardService;
+   }
+
+   private void Start()
+   {
+      UpdateLeaderboard();
    }
 
    private void Update()
