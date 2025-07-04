@@ -38,8 +38,7 @@ public class LeaderboardView : MonoBehaviour
       var competitorsList = _leaderboardService.SortedCompetitors;
       for (int i = 0; i < competitorsList.Count; i++)
       {
-         leaderboardTexts[i].text = $"{i+1}. {competitorsList[i].Name}     {competitorsList[i].TotalProgress}";
-         
+         leaderboardTexts[i].text = $"{i+1}. {competitorsList[i].Name}";
       }
    }
 

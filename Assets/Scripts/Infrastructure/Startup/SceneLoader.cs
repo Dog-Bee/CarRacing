@@ -28,7 +28,11 @@ public class SceneLoader : MonoBehaviour
             yield return null;
         }
         loadOperation.allowSceneActivation = true;
+
+        while (!loadOperation.isDone)
+        {
             yield return null;
+        }
         SceneManager.SetActiveScene(SceneManager.GetSceneByName(_currentScene));
 
         if (_prevScene != "")

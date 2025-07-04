@@ -6,4 +6,5 @@ public interface IRaceProgress
 {
    public float TotalProgress { get; }
    public string Name { get; }
+   public bool IsPlayer { get; }
 }

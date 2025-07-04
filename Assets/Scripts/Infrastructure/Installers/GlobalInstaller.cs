@@ -12,8 +12,7 @@ public class GlobalInstaller : MonoInstaller
         
         SignalBusInstaller.Install(Container);
         
-        Container.DeclareSignal<LapFinishedSignal>();
-        Container.DeclareSignal<CoinCollectedSignal>();
+        
     }
     
     

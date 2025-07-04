@@ -21,7 +21,12 @@ public class MenuStateMachine : MonoBehaviour
 
     private void OnMenuStateChangedSignal(MenuStateChangeSignal signal)
     {
-        if(signal.MenuState == _currentState) return;
+        if(signal.MenuState == _currentState)
+        {
+            _currentState.ExitState();
+            _currentState = null;
+            return;
+        }
         _prevState = _currentState;
         _currentState = signal.MenuState;
         _prevState?.ExitState();
