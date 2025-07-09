@@ -19,5 +19,11 @@ public class LeaderboardService
         return $"{index + 1}.{player.Name}";
     }
 
+    public int GetPlayerPlace()
+    {
+        return SortedCompetitors.IndexOf(SortedCompetitors.FirstOrDefault(s=>s.IsPlayer));
+    }
+    
+
     
 }

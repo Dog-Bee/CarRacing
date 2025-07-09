@@ -1,0 +1,242 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3e066b9c2a8f7742a310fd4fda6c8f6, type: 3}
+  m_Name: VehicleColorConfig
+  m_EditorClassIdentifier: 
+  bodyColorConfigs:
+  - PartType: 0
+    IsUnlocked: 1
+    Price: 0
+    Color: {r: 0.28627452, g: 0.46274513, b: 0.76470596, a: 1}
+  - PartType: 0
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.28627455, g: 0.7647059, b: 0.7451726, a: 1}
+  - PartType: 0
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.28627455, g: 0.7647059, b: 0.4404004, a: 1}
+  - PartType: 0
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.40143558, g: 0.7647059, b: 0.28627455, a: 1}
+  - PartType: 0
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.7647059, g: 0.7566438, b: 0.28627455, a: 1}
+  - PartType: 0
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.7647059, g: 0.5981143, b: 0.28627455, a: 1}
+  - PartType: 0
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.7647059, g: 0.28627455, b: 0.35440284, a: 1}
+  - PartType: 0
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.7647059, g: 0.28627455, b: 0.6601843, a: 1}
+  - PartType: 0
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.70230216, g: 0.28627455, b: 0.7647059, a: 1}
+  - PartType: 0
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.4774432, g: 0.28627455, b: 0.7647059, a: 1}
+  - PartType: 0
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0, g: 0.36885214, b: 1, a: 1}
+  - PartType: 0
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.3177894, g: 0.7647059, b: 0.28627455, a: 1}
+  - PartType: 0
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 1, g: 0, b: 0.21360016, a: 1}
+  - PartType: 0
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 1, g: 0, b: 0.86508846, a: 1}
+  wheelColorConfigs:
+  - PartType: 1
+    IsUnlocked: 1
+    Price: 0
+    Color: {r: 0.37647063, g: 0.37647063, b: 0.37647063, a: 1}
+  - PartType: 1
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.15218937, g: 0.19435236, b: 0.33962262, a: 1}
+  - PartType: 1
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.15294118, g: 0.32855144, b: 0.34117648, a: 1}
+  - PartType: 1
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.15294118, g: 0.34117648, b: 0.20698333, a: 1}
+  - PartType: 1
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.25838733, g: 0.34117648, b: 0.15294118, a: 1}
+  - PartType: 1
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.34117648, g: 0.31727868, b: 0.15294118, a: 1}
+  - PartType: 1
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.34117648, g: 0.21165891, b: 0.15294118, a: 1}
+  - PartType: 1
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.34117648, g: 0.15294118, b: 0.2351953, a: 1}
+  - PartType: 1
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.2841629, g: 0.15294118, b: 0.34117648, a: 1}
+  - PartType: 1
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.6875, g: 0, b: 1, a: 1}
+  - PartType: 1
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.030668736, g: 0, b: 1, a: 1}
+  - PartType: 1
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 1, g: 0, b: 0.029372692, a: 1}
+  - PartType: 1
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.018116832, g: 1, b: 0, a: 1}
+  - PartType: 1
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0, g: 0, b: 0, a: 1}
+  steeringColorConfigs:
+  - PartType: 2
+    IsUnlocked: 1
+    Price: 0
+    Color: {r: 0.37647063, g: 0.37647063, b: 0.37647063, a: 1}
+  - PartType: 2
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.15294118, g: 0.19607845, b: 0.34117648, a: 1}
+  - PartType: 2
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.15294118, g: 0.32941177, b: 0.34117648, a: 1}
+  - PartType: 2
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.15294118, g: 0.34117648, b: 0.20784315, a: 1}
+  - PartType: 2
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.25882354, g: 0.34117648, b: 0.15294118, a: 1}
+  - PartType: 2
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.34117648, g: 0.31764707, b: 0.15294118, a: 1}
+  - PartType: 2
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.34117648, g: 0.21176472, b: 0.15294118, a: 1}
+  - PartType: 2
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.34117648, g: 0.15294118, b: 0.23529413, a: 1}
+  - PartType: 2
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.28235295, g: 0.15294118, b: 0.34117648, a: 1}
+  - PartType: 2
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.6862745, g: 0, b: 1, a: 1}
+  - PartType: 2
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.03137255, g: 0, b: 1, a: 1}
+  - PartType: 2
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 1, g: 0, b: 0.027450982, a: 1}
+  - PartType: 2
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.019607844, g: 1, b: 0, a: 1}
+  - PartType: 2
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0, g: 0, b: 0, a: 1}
+  tubeColorConfigs:
+  - PartType: 3
+    IsUnlocked: 1
+    Price: 0
+    Color: {r: 1, g: 0, b: 0, a: 1}
+  - PartType: 3
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.07919741, g: 0, b: 1, a: 1}
+  - PartType: 3
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0, g: 0.77752113, b: 1, a: 1}
+  - PartType: 3
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0, g: 1, b: 0.7013538, a: 1}
+  - PartType: 3
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.36854753, g: 0.7735849, b: 0.5215924, a: 1}
+  - PartType: 3
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.38496292, g: 1, b: 0, a: 1}
+  - PartType: 3
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.9801799, g: 1, b: 0, a: 1}
+  - PartType: 3
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 1, g: 0.76596725, b: 0, a: 1}
+  - PartType: 3
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 1, g: 0.43618035, b: 0, a: 1}
+  - PartType: 3
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 1, g: 0, b: 0.44474888, a: 1}
+  - PartType: 3
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 1, g: 0, b: 0.7795243, a: 1}
+  - PartType: 3
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0.86983776, g: 0, b: 1, a: 1}
+  - PartType: 3
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 0, g: 0, b: 0, a: 1}
+  - PartType: 3
+    IsUnlocked: 0
+    Price: 0
+    Color: {r: 1, g: 1, b: 1, a: 1}

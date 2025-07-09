@@ -29,7 +29,7 @@ public class MenuStateMachine : MonoBehaviour
         }
         _prevState = _currentState;
         _currentState = signal.MenuState;
-        _prevState?.ExitState();
+        _prevState?.ExitOverlap();
         _currentState.EnterState();
     }
 }

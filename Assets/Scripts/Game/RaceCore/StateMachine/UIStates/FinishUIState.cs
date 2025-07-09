@@ -11,6 +11,9 @@ public class FinishUIState : AGameplayUIState
     [SerializeField] private TextMeshProUGUI coinText;
     [SceneName]
     [SerializeField] private string sceneName;
+
+    [SerializeField] private GameObject winUI;
+    [SerializeField] private GameObject loseUI;
    
     
     private LeaderboardService _leaderboardService;
@@ -23,6 +26,11 @@ public class FinishUIState : AGameplayUIState
 
     public override void EnterState()
     {
+        bool isWin = _leaderboardService.GetPlayerPlace() == 0;
+        
+        winUI.SetActive(isWin);
+        loseUI.SetActive(!isWin);
+        
         base.EnterState();
         leaderboardText.text = _leaderboardService.GetPlayer();
         
