@@ -22,7 +22,7 @@ public class MenuSkinState : AMenuState, IMenuState
 
     public override void EnterState()
     {
-        Vector2 targetPosition =  Vector2.right*selfRect.sizeDelta.x/2;
+        //Vector2 targetPosition =  Vector2.right*selfRect.sizeDelta.x/2;
         Debug.Log("MenuStartState.EnterState");
         
         canvasGroup.ForEach(c =>
@@ -32,12 +32,12 @@ public class MenuSkinState : AMenuState, IMenuState
             c.DOFade(1,fadeDuration).SetEase(Ease.Linear);
         });
         
-        selfRect.DOAnchorPos(targetPosition,fadeDuration).SetEase(Ease.Linear);
+        //selfRect.DOAnchorPos(targetPosition,fadeDuration).SetEase(Ease.Linear);
     }
 
     public override void ExitState()
     {
-        Vector2 targetPosition =  Vector2.right*Screen.width/2;
+       // Vector2 targetPosition =  Vector2.right*Screen.width/2;
         
         canvasGroup.ForEach(c =>
         {
@@ -45,7 +45,7 @@ public class MenuSkinState : AMenuState, IMenuState
             c.blocksRaycasts = false;
             c.DOFade(0,fadeDuration).SetEase(Ease.Linear);
         });
-        selfRect.DOAnchorPos(targetPosition,fadeDuration).SetEase(Ease.Linear);
+        //selfRect.DOAnchorPos(targetPosition,fadeDuration).SetEase(Ease.Linear);
     }
 
     public override void EnterOverlap()
@@ -65,7 +65,7 @@ public class MenuSkinState : AMenuState, IMenuState
 
     public override void EnterImmediately()
     {
-        Vector2 targetPosition =  Vector2.right*selfRect.sizeDelta.x/2;
+       // Vector2 targetPosition =  Vector2.right*selfRect.sizeDelta.x/2;
         
         canvasGroup.ForEach(c =>
         {
@@ -74,12 +74,12 @@ public class MenuSkinState : AMenuState, IMenuState
             c.alpha = 1;
         });
         
-        selfRect.anchoredPosition = targetPosition;
+        //selfRect.anchoredPosition = targetPosition;
     }
 
     public override void ExitImmediately()
     {
-        Vector2 targetPosition = Vector2.right*Screen.width/2;
+        //Vector2 targetPosition = Vector2.right*Screen.width/2;
         
         canvasGroup.ForEach(c =>
         {
@@ -88,6 +88,6 @@ public class MenuSkinState : AMenuState, IMenuState
             c.alpha = 0;
         });
         
-        selfRect.anchoredPosition = targetPosition;
+        //selfRect.anchoredPosition = targetPosition;
     }
 }

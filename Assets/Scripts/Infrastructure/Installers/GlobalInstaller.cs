@@ -12,7 +12,15 @@ public class GlobalInstaller : MonoInstaller
         
         SignalBusInstaller.Install(Container);
         
+        Container.Bind<CoinService>().FromMethod(ctx =>
+        {
+            var instance = new CoinService();
+            ctx.Container.Inject(instance);
+            return instance;
+        }).AsSingle();
         
+        Container.DeclareSignal<CoinChangedSignal>();
+
     }
     
     

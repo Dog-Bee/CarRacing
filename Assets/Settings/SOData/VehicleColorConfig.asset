@@ -62,7 +62,7 @@ MonoBehaviour:
     Price: 0
     Color: {r: 0.3177894, g: 0.7647059, b: 0.28627455, a: 1}
   - PartType: 0
-    IsUnlocked: 0
+    IsUnlocked: 1
     Price: 0
     Color: {r: 1, g: 0, b: 0.21360016, a: 1}
   - PartType: 0
@@ -119,7 +119,7 @@ MonoBehaviour:
     Price: 0
     Color: {r: 1, g: 0, b: 0.029372692, a: 1}
   - PartType: 1
-    IsUnlocked: 0
+    IsUnlocked: 1
     Price: 0
     Color: {r: 0.018116832, g: 1, b: 0, a: 1}
   - PartType: 1
@@ -168,7 +168,7 @@ MonoBehaviour:
     Price: 0
     Color: {r: 0.6862745, g: 0, b: 1, a: 1}
   - PartType: 2
-    IsUnlocked: 0
+    IsUnlocked: 1
     Price: 0
     Color: {r: 0.03137255, g: 0, b: 1, a: 1}
   - PartType: 2
@@ -180,7 +180,7 @@ MonoBehaviour:
     Price: 0
     Color: {r: 0.019607844, g: 1, b: 0, a: 1}
   - PartType: 2
-    IsUnlocked: 0
+    IsUnlocked: 1
     Price: 0
     Color: {r: 0, g: 0, b: 0, a: 1}
   tubeColorConfigs:
@@ -201,7 +201,7 @@ MonoBehaviour:
     Price: 0
     Color: {r: 0, g: 1, b: 0.7013538, a: 1}
   - PartType: 3
-    IsUnlocked: 0
+    IsUnlocked: 1
     Price: 0
     Color: {r: 0.36854753, g: 0.7735849, b: 0.5215924, a: 1}
   - PartType: 3
@@ -233,10 +233,10 @@ MonoBehaviour:
     Price: 0
     Color: {r: 0.86983776, g: 0, b: 1, a: 1}
   - PartType: 3
-    IsUnlocked: 0
+    IsUnlocked: 1
     Price: 0
     Color: {r: 0, g: 0, b: 0, a: 1}
   - PartType: 3
-    IsUnlocked: 0
+    IsUnlocked: 1
     Price: 0
     Color: {r: 1, g: 1, b: 1, a: 1}

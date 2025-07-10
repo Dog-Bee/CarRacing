@@ -2,47 +2,46 @@ using System;
 using DG.Tweening;
 using UnityEngine;
 using Zenject;
+using Vector3 = System.Numerics.Vector3;
 
-public class MenuStartState : AMenuState, IMenuState
+public class MenuMapState : AMenuState,IMenuState
 {
-    [SerializeField] private CanvasGroup cancelCanvasGroup;
     [SerializeField] private CanvasGroup canvasGroup;
+    [SerializeField] private RectTransform targetRect;
+    [SerializeField] private RectTransform selfRect;
     [SerializeField] private float fadeDuration = 0.5f;
-    
+
     [Inject] private void Construct(SignalBus signalBus)
     {
         _signalBus = signalBus;
     }
-
     private void Start()
     {
-        SendState();
+        ExitImmediately();
     }
 
     public override void EnterState()
     {
-        Debug.Log("MenuStartState.EnterState");
+        //Vector2 targetPosition =  Vector2.right*selfRect.sizeDelta.x/2;
+        
+        Debug.Log("MenuMapState.EnterState");
         
         canvasGroup.interactable = true;
         canvasGroup.blocksRaycasts = true;
         
-        cancelCanvasGroup.DOFade(0f, fadeDuration);
-        cancelCanvasGroup.interactable = false;
-        cancelCanvasGroup.blocksRaycasts = false;
-        
         canvasGroup.DOFade(1,fadeDuration).SetEase(Ease.Linear);
+        //selfRect.DOAnchorPos(targetPosition,fadeDuration).SetEase(Ease.Linear);
     }
 
     public override void ExitState()
     {
+        //Vector2 targetPosition =  Vector2.right*Screen.width/2;
+        
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
             
-        cancelCanvasGroup.DOFade(1f, fadeDuration);
-        cancelCanvasGroup.interactable = true;
-        cancelCanvasGroup.blocksRaycasts = true;
-        
         canvasGroup.DOFade(0,fadeDuration).SetEase(Ease.Linear);
+        //selfRect.DOAnchorPos(targetPosition,fadeDuration).SetEase(Ease.Linear);
     }
 
     public override void EnterOverlap()
@@ -54,33 +53,27 @@ public class MenuStartState : AMenuState, IMenuState
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
         canvasGroup.DOFade(0,fadeDuration).SetEase(Ease.Linear);
-
-        cancelCanvasGroup.DOFade(1f, fadeDuration);
-        cancelCanvasGroup.interactable = true;
-        cancelCanvasGroup.blocksRaycasts = true;
     }
 
     public override void EnterImmediately()
     {
         canvasGroup.alpha = 1;
-        cancelCanvasGroup.alpha = 0;
-
-        cancelCanvasGroup.interactable = false;
-        cancelCanvasGroup.blocksRaycasts = false;
+        //Vector2 targetPosition =  Vector2.right*selfRect.sizeDelta.x/2;;
         
         canvasGroup.interactable = true;
         canvasGroup.blocksRaycasts = true;
+        
+        //selfRect.anchoredPosition = targetPosition;
     }
 
     public override void ExitImmediately()
     {
         canvasGroup.alpha = 0;
-        cancelCanvasGroup.alpha = 1;
-        
-        cancelCanvasGroup.interactable = true;
-        cancelCanvasGroup.blocksRaycasts = true;
+        //Vector2 targetPosition = Vector2.right*Screen.width/2;
         
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
+        
+        //selfRect.anchoredPosition = targetPosition;
     }
 }

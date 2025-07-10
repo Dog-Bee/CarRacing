@@ -430,7 +430,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 400, y: -627}
-  m_SizeDelta: {x: 670, y: 527.76935}
+  m_SizeDelta: {x: 670, y: 162.58978}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5177651158577539422
 MonoBehaviour:
@@ -489,7 +489,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3729592133710179570
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1573,7 +1573,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7627926588737411686
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2204,7 +2204,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4128059667472448766
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2440,6 +2440,11 @@ MonoBehaviour:
   leaderboardText: {fileID: 2572983879869323857}
   coinText: {fileID: 669461712986239702}
   sceneName: Menu
+  winUI: {fileID: 6514790854100284064}
+  loseUI: {fileID: 5800039580134108082}
+  prizeTexts:
+  - {fileID: 2566916098243877546}
+  - {fileID: 7652158018162854792}
 --- !u!225 &2340280129033442132
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2448,9 +2453,9 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3620353577184007246}
   m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!1 &3729127454307894386
 GameObject:
@@ -3323,14 +3328,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.14899999, g: 0.14899999, b: 0.14899999, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cdb56e5b58df61440a6b679d27fbc4e2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1ab4f5db2af290a43881886c68f07a8b, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3547,7 +3552,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7249456333444336557
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4342,7 +4347,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1677713335534033812
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4363,7 +4368,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 400, y: -627}
-  m_SizeDelta: {x: 670, y: 527.76935}
+  m_SizeDelta: {x: 670, y: 162.58978}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1903044252377350260
 MonoBehaviour:
@@ -4514,7 +4519,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6351990148169709362}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0

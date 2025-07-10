@@ -3,18 +3,22 @@ using Zenject;
 
 public class CoinCollector : MonoBehaviour
 {
+    [SerializeField] private bool availableAccumulate;
     private int _coinCount;
     private SignalBus _signalBus;
+    private CoinService _coinService;
     [Inject]
-    private void Construct(SignalBus signalBus)
+    private void Construct(CoinService coinService)
     {
-        _signalBus = signalBus;
+        _coinService = coinService;
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag != "Coin") return;
-        _coinCount++;
         other.gameObject.SetActive(false);
-        _signalBus.Fire(new CoinCollectedSignal(_coinCount));
+        
+        if (!availableAccumulate) return;
+        _coinCount++;
+        _coinService.SetTempCoins(_coinCount);
     }
 }

@@ -17,7 +17,6 @@ namespace Infrastructure.Installers
             Container.Bind<LeaderboardService>().AsSingle();
             
             Container.DeclareSignal<LapFinishedSignal>();
-            Container.DeclareSignal<CoinCollectedSignal>();
             Container.DeclareSignal<GameplayStateChangedSignal>();
         }
     }

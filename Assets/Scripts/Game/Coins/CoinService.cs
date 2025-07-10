@@ -1,0 +1,55 @@
+using Zenject;
+
+public class CoinService
+{
+    private int _coins;
+
+    private int _tempCoins;
+
+    public int TempCoins => _tempCoins;
+    public int Coins => _coins;
+    private JsonSavableValue<int> saveCoins;
+
+    [Inject] private SignalBus _signalBus;
+
+    public CoinService()
+    {
+        saveCoins = new("Coins", 0);
+        _coins = saveCoins.Value;
+    }
+
+    public void SetTempCoins(int coins)
+    {
+        _tempCoins = coins;
+    }
+
+    public void ResetTempCoins()
+    {
+        _tempCoins = 0;
+    }
+
+    public bool IsEnoughCoins(int amount)
+    {
+        return _coins >= amount;
+    }
+    
+    public void AddCoins(int coins)
+    {
+        _coins += coins;
+        SaveCoins();
+        
+    }
+
+    public void SpendCoins(int coins)
+    {
+        if (_coins < coins) return;
+        _coins -= coins;
+        SaveCoins();
+    }
+
+    private void SaveCoins()
+    {
+        saveCoins.Value = _coins;
+        _signalBus.Fire(new CoinChangedSignal(_coins));
+    }
+}

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
@@ -13,22 +14,32 @@ public class SkinPopUp : MonoBehaviour
     [SerializeField] private Image colorImage;
     [SerializeField] private Button buyButton;
     [SerializeField] private Button cancelButton;
+    [SerializeField] private TextMeshProUGUI priceText;
 
+    private const string TOKEN_NAME = "Token";
+    
     private SignalBus _signalBus;
+    private CoinService _coinService;
     private ColorConfig _config;
+    
     public Action<ColorConfig> OnBuyCallback;
 
     [Inject]
-    private void Construct(SignalBus signalBus)
+    private void Construct(SignalBus signalBus, CoinService coinService)
     {
         _signalBus = signalBus;
+        _coinService = coinService;
         Deactivate();
     }
     
     public void Activate(ColorConfig config)
     {
+        _config = config;
+        
         buyButton.onClick.RemoveAllListeners();
         cancelButton.onClick.RemoveAllListeners();
+        
+        priceText.text = $"for {_config.Price}    <sprite name={TOKEN_NAME}>";
         
         ButtonsInitialize();
         
@@ -36,7 +47,6 @@ public class SkinPopUp : MonoBehaviour
         canvasGroup.interactable = true;
         canvasGroup.blocksRaycasts = true;
         
-        _config = config;
         colorImage.color = _config.Color;
     }
 
@@ -49,6 +59,8 @@ public class SkinPopUp : MonoBehaviour
 
     private void ButtonsInitialize()
     {
+        buyButton.interactable = _coinService.IsEnoughCoins(_config.Price);
+        
         buyButton.onClick.AddListener(() =>
         {
             _config.IsUnlocked = true;

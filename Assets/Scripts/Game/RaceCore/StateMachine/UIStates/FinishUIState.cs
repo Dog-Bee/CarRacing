@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
@@ -12,13 +13,17 @@ public class FinishUIState : AGameplayUIState
     [SceneName]
     [SerializeField] private string sceneName;
 
+    [Header("ResultPanels")]
     [SerializeField] private GameObject winUI;
     [SerializeField] private GameObject loseUI;
+    [SerializeField] private List<TextMeshProUGUI> prizeTexts;
    
     
-    private LeaderboardService _leaderboardService;
+    private const string TOKEN_NAME = "Token";
     
-    [Inject] private void Construct(SceneLoader sceneLoader,LeaderboardService leaderboardService)
+    private LeaderboardService _leaderboardService;
+    private CoinService _coinService;
+    [Inject] private void Construct(SceneLoader sceneLoader,LeaderboardService leaderboardService,CoinService coinService)
     {
         closeButton.onClick.AddListener(()=>sceneLoader.LoadScene(sceneName));
         _leaderboardService = leaderboardService;
@@ -28,12 +33,23 @@ public class FinishUIState : AGameplayUIState
     {
         bool isWin = _leaderboardService.GetPlayerPlace() == 0;
         
+        if (isWin)
+        {
+            _coinService.AddCoins(_coinService.TempCoins);
+        }
+        
+        prizeTexts.ForEach(t =>
+        {
+            t.text = $"<sprite name={TOKEN_NAME}> +{_coinService.TempCoins} Tokens";
+        });
+        
         winUI.SetActive(isWin);
         loseUI.SetActive(!isWin);
         
         base.EnterState();
         leaderboardText.text = _leaderboardService.GetPlayer();
-        
+        _coinService.ResetTempCoins();
+
     }
     
 
