@@ -103,5 +103,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 10.053941, y: 1.102431, z: 0.42142403}
-  m_Center: {x: -5.0044866, y: 0.55533195, z: -0.21071202}
+  m_Size: {x: 10.053941, y: 6.815508, z: 0.42142406}
+  m_Center: {x: -5.004486, y: 3.41187, z: -0.21071202}

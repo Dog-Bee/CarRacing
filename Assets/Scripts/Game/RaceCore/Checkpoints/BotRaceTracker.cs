@@ -25,6 +25,7 @@ public class BotRaceTracker : ARaceTracker
         if (_lap >= _checkpointBehaviour.LapCount)
         {
             _currentCheckpoint = _checkpointBehaviour.GetFinishCheckpoint();
+            ReachDistance = 5;
             _isFinish = true;
         }
         

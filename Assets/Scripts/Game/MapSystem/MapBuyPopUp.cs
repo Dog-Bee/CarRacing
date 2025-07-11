@@ -1,55 +1,52 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-public class SkinPopUp : MonoBehaviour
+public class MapBuyPopUp : MonoBehaviour
 {
+    [SerializeField] private float fadeDuration = .25f;
     [SerializeField] private CanvasGroup canvasGroup;
-    [SerializeField] private float fadeDuration = 0.25f;
-    [SerializeField] private Image colorImage;
+    [SerializeField] private Image mapImage;
     [SerializeField] private Button buyButton;
     [SerializeField] private Button cancelButton;
     [SerializeField] private TextMeshProUGUI priceText;
-
-    private const string TOKEN_NAME = "Token";
     
+    
+    private const string TOKEN_NAME = "Token";
     private SignalBus _signalBus;
     private CoinService _coinService;
-    private ColorConfig _config;
-    
+    private MapConfig _mapConfig;
 
-    [Inject]
-    private void Construct(SignalBus signalBus, CoinService coinService)
+
+
+    [Inject] private void Construct(SignalBus signalBus, CoinService coinService)
     {
         _signalBus = signalBus;
         _coinService = coinService;
         Deactivate();
     }
-    
-    public void Activate(ColorConfig config)
+
+    public void Activate(MapConfig mapConfig)
     {
-        _config = config;
-        
+        _mapConfig = mapConfig;
         buyButton.onClick.RemoveAllListeners();
         cancelButton.onClick.RemoveAllListeners();
-        
-        priceText.text = $"for {_config.Price}    <sprite name={TOKEN_NAME}>";
+
+        priceText.text = $"for {_mapConfig.price}   <sprite name={TOKEN_NAME}>";
         
         ButtonsInitialize();
         
         canvasGroup.DOFade(1,fadeDuration).SetEase(Ease.Linear);
         canvasGroup.interactable = true;
         canvasGroup.blocksRaycasts = true;
-        
-        colorImage.color = _config.Color;
+
+        mapImage.sprite = _mapConfig.MapSprite;
+
     }
 
-    private void Deactivate()
+    public void Deactivate()
     {
         canvasGroup.DOFade(0,fadeDuration).SetEase(Ease.Linear);
         canvasGroup.interactable = false;
@@ -58,12 +55,12 @@ public class SkinPopUp : MonoBehaviour
 
     private void ButtonsInitialize()
     {
-        buyButton.interactable = _coinService.IsEnoughCoins(_config.Price);
+        buyButton.interactable = _coinService.IsEnoughCoins(_mapConfig.price);
         
         buyButton.onClick.AddListener(() =>
         {
-            _config.IsUnlocked = true;
-            _signalBus.Fire(new TryColorChangeSignal(_config));
+            _mapConfig.isUnlocked = true;
+            _signalBus.Fire(new MapUnlockSignal(_mapConfig));
             Deactivate();
         });
         

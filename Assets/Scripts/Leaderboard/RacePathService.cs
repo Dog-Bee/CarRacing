@@ -43,7 +43,6 @@ public class RacePathService
         float distanceOnSegment = Vector3.Distance(start, projected);
         float distanceToStart = _accumulatedDistances[previousIndex];
      
-        Debug.Log($"Distance to start: {distanceToStart}, Distance on segment: {distanceOnSegment}");
 
         if(index==0)
             return distanceOnSegment;

@@ -7,7 +7,8 @@ using Zenject;
 
 public class FinishUIState : AGameplayUIState
 {
-    [SerializeField] private Button closeButton;
+    [SerializeField] private Button mainMenuButton;
+    [SerializeField] private Button restartButton;
     [SerializeField] private TextMeshProUGUI leaderboardText;
     [SerializeField] private TextMeshProUGUI coinText;
     [SceneName]
@@ -25,12 +26,15 @@ public class FinishUIState : AGameplayUIState
     private CoinService _coinService;
     [Inject] private void Construct(SceneLoader sceneLoader,LeaderboardService leaderboardService,CoinService coinService)
     {
-        closeButton.onClick.AddListener(()=>sceneLoader.LoadScene(sceneName));
+        mainMenuButton.onClick.AddListener(()=>sceneLoader.LoadScene(sceneName));
+        restartButton.onClick.AddListener(()=>sceneLoader.RestartScene());
+        _coinService = coinService;
         _leaderboardService = leaderboardService;
     }
 
     public override void EnterState()
     {
+        Debug.Log($"Player place {_leaderboardService.GetPlayerPlace()}");
         bool isWin = _leaderboardService.GetPlayerPlace() == 0;
         
         if (isWin)

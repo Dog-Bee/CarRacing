@@ -10,10 +10,14 @@ public abstract class AGameplayUIState : MonoBehaviour,IGameplayUI
     public virtual void EnterState()
     {
         canvasGroup.DOFade(1,fadeTime).SetEase(Ease.Linear);
+        canvasGroup.interactable = true;
+        canvasGroup.blocksRaycasts = true;
     }
 
     public virtual void ExitState()
     {
         canvasGroup.DOFade(0,fadeTime).SetEase(Ease.Linear);
+        canvasGroup.interactable = false;
+        canvasGroup.blocksRaycasts = false;
     }
 }

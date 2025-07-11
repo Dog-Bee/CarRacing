@@ -84,6 +84,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1808680152483331618, guid: 06a2ea091dc780f4b8796650ac852bc9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2af92a6a727f9da40b29459087246b74, type: 2}
     - target: {fileID: 5952725671038457473, guid: 06a2ea091dc780f4b8796650ac852bc9, type: 3}
       propertyPath: m_Name
       value: CoinParent (61)
@@ -146,6 +150,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1808680152483331618, guid: 06a2ea091dc780f4b8796650ac852bc9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2af92a6a727f9da40b29459087246b74, type: 2}
     - target: {fileID: 5952725671038457473, guid: 06a2ea091dc780f4b8796650ac852bc9, type: 3}
       propertyPath: m_Name
       value: CoinParent (62)
@@ -270,6 +278,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1808680152483331618, guid: 06a2ea091dc780f4b8796650ac852bc9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2af92a6a727f9da40b29459087246b74, type: 2}
     - target: {fileID: 5952725671038457473, guid: 06a2ea091dc780f4b8796650ac852bc9, type: 3}
       propertyPath: m_Name
       value: CoinParent (55)
@@ -332,6 +344,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1808680152483331618, guid: 06a2ea091dc780f4b8796650ac852bc9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2af92a6a727f9da40b29459087246b74, type: 2}
     - target: {fileID: 5952725671038457473, guid: 06a2ea091dc780f4b8796650ac852bc9, type: 3}
       propertyPath: m_Name
       value: CoinParent (56)

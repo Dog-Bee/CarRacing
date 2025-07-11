@@ -1,3 +1,4 @@
+using UnityEngine;
 using Zenject;
 
 public class CoinService
@@ -7,7 +8,7 @@ public class CoinService
     private int _tempCoins;
 
     public int TempCoins => _tempCoins;
-    public int Coins => _coins;
+    public int Coins => saveCoins.Value;
     private JsonSavableValue<int> saveCoins;
 
     [Inject] private SignalBus _signalBus;
@@ -15,6 +16,7 @@ public class CoinService
     public CoinService()
     {
         saveCoins = new("Coins", 0);
+        Debug.Log($"Coin service init coin value: {saveCoins.Value}");
         _coins = saveCoins.Value;
     }
 
@@ -35,6 +37,8 @@ public class CoinService
     
     public void AddCoins(int coins)
     {
+        Debug.Log($"Add coins now is: {saveCoins.Value}");
+
         _coins += coins;
         SaveCoins();
         

@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-[Serializable]
-public class ColorConfig
+[Serializable] public class ColorConfig
 {
     public PartType PartType;
     public bool IsUnlocked;
@@ -32,7 +31,7 @@ public class VehicleColorConfig : ScriptableObject
     public JsonSavableValue<List<ColorConfig>> WheelColorConfigs;
     public JsonSavableValue<List<ColorConfig>> SteeringColorConfigs;
     public JsonSavableValue<List<ColorConfig>> TubeColorConfigs;
-    
+
     public JsonSavableValue<ColorConfig> BodyColor { get; private set; }
     public JsonSavableValue<ColorConfig> WheelColor { get; private set; }
     public JsonSavableValue<ColorConfig> SteeringColor { get; private set; }
@@ -41,26 +40,36 @@ public class VehicleColorConfig : ScriptableObject
 
     public void Init()
     {
-        
-            BodyColor = new JsonSavableValue<ColorConfig>("CurrenBodyColor", bodyColorConfigs[0]);
-            WheelColor = new JsonSavableValue<ColorConfig>("CurrenWheelColor", wheelColorConfigs[0]);
-            SteeringColor = new JsonSavableValue<ColorConfig>("CurrenSteeringColor", steeringColorConfigs[0]);
-            TubeColor = new JsonSavableValue<ColorConfig>("CurrenTubeColor", tubeColorConfigs[0]); 
-        
+        Reset();
 
-        
-            BodyColorConfigs = new JsonSavableValue<List<ColorConfig>>("BodyColorConfigs", bodyColorConfigs);
-            WheelColorConfigs = new JsonSavableValue<List<ColorConfig>>("WheelColorConfigs", wheelColorConfigs);
-            SteeringColorConfigs = new JsonSavableValue<List<ColorConfig>>("SteeringColorConfigs", steeringColorConfigs);
-            TubeColorConfigs = new JsonSavableValue<List<ColorConfig>>("TubeColorConfigs", tubeColorConfigs);
-       
-            bodyColorConfigs = BodyColorConfigs.Value;
-            wheelColorConfigs = WheelColorConfigs.Value;
-            steeringColorConfigs = SteeringColorConfigs.Value;
-            tubeColorConfigs = TubeColorConfigs.Value;
-        
+        BodyColor = new JsonSavableValue<ColorConfig>("CurrenBodyColor", bodyColorConfigs[0]);
+        WheelColor = new JsonSavableValue<ColorConfig>("CurrenWheelColor", wheelColorConfigs[0]);
+        SteeringColor = new JsonSavableValue<ColorConfig>("CurrenSteeringColor", steeringColorConfigs[0]);
+        TubeColor = new JsonSavableValue<ColorConfig>("CurrenTubeColor", tubeColorConfigs[0]);
+
+        BodyColorConfigs = new JsonSavableValue<List<ColorConfig>>("BodyColorConfigs", bodyColorConfigs);
+        WheelColorConfigs = new JsonSavableValue<List<ColorConfig>>("WheelColorConfigs", wheelColorConfigs);
+        SteeringColorConfigs = new JsonSavableValue<List<ColorConfig>>("SteeringColorConfigs", steeringColorConfigs);
+        TubeColorConfigs = new JsonSavableValue<List<ColorConfig>>("TubeColorConfigs", tubeColorConfigs);
+
+        bodyColorConfigs = BodyColorConfigs.Value;
+        wheelColorConfigs = WheelColorConfigs.Value;
+        steeringColorConfigs = SteeringColorConfigs.Value;
+        tubeColorConfigs = TubeColorConfigs.Value;
     }
-    
+
+    private void Reset()
+    {
+        bodyColorConfigs.ForEach(c => c.IsUnlocked = false);
+        bodyColorConfigs[0].IsUnlocked = true;
+        wheelColorConfigs.ForEach(c => c.IsUnlocked = false);
+        wheelColorConfigs[0].IsUnlocked = true;
+        steeringColorConfigs.ForEach(c => c.IsUnlocked = false);
+        steeringColorConfigs[0].IsUnlocked = true;
+        tubeColorConfigs.ForEach(c => c.IsUnlocked = false);
+        tubeColorConfigs[0].IsUnlocked = true;
+    }
+
     public void SaveColor(ColorConfig config)
     {
         switch (config.PartType)
@@ -111,5 +120,4 @@ public class VehicleColorConfig : ScriptableObject
         TubeColor.Value = tubeColorConfigs[index];
         TubeColorConfigs.Value = tubeColorConfigs;
     }
-
 }

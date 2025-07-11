@@ -12,5 +12,7 @@ public class MenuInstaller : MonoInstaller
         Container.DeclareSignal<MenuStateChangeSignal>();
         Container.DeclareSignal<TryColorChangeSignal>();
         Container.DeclareSignal<ColorChangedSignal>();
+        Container.DeclareSignal<TryMapLoadSignal>();
+        Container.DeclareSignal<MapUnlockSignal>();
     }
 }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4852463248912202070}
   - component: {fileID: 7857450481527660125}
   - component: {fileID: 53168324864860697}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: road-curve
   m_TagString: Untagged
   m_Icon: {fileID: 0}

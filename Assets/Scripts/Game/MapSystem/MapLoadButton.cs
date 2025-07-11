@@ -1,0 +1,41 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.UI;
+using Zenject;
+
+public class MapLoadButton : MonoBehaviour
+{
+    [SerializeField] private Button button;
+    [SerializeField] private Image lockImage;
+    private MapConfig _mapConfig;
+    private ColorBlock _spriteState;
+    
+    private SignalBus _signalBus;
+    
+    public MapConfig MapConfig=>_mapConfig;
+    
+    public void Init(MapConfig mapConfig, SignalBus signalBus)
+    {
+        _mapConfig = mapConfig;
+        _signalBus = signalBus;
+        button.image.sprite = _mapConfig.MapSprite;
+        _spriteState = button.colors;
+        button.onClick.AddListener(() =>
+        {
+            _signalBus.Fire(new TryMapLoadSignal(_mapConfig));
+        });
+        
+        UpdateView(_mapConfig);
+    }
+
+    public void UpdateView(MapConfig mapConfig)
+    {
+        _mapConfig = mapConfig;
+        _spriteState.normalColor = _mapConfig.isUnlocked ? Color.white : _spriteState.disabledColor;
+        button.colors = _spriteState;
+        lockImage.gameObject.SetActive(!_mapConfig.isUnlocked);
+
+    }
+}
