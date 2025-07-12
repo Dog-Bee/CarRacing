@@ -1,15 +1,14 @@
-using System;
+using System.Collections;
+using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 using Zenject;
 
-public class MenuMapState : AMenuState,IMenuState
+public class MenuInstuctionsState : AMenuState, IMenuState
 {
     [SerializeField] private CanvasGroup canvasGroup;
-    [SerializeField] private RectTransform targetRect;
-    [SerializeField] private RectTransform selfRect;
     [SerializeField] private float fadeDuration = 0.5f;
-
+    
     [Inject] private void Construct(SignalBus signalBus)
     {
         _signalBus = signalBus;

@@ -20,6 +20,7 @@ public class MapLoadButton : MonoBehaviour
     {
         _mapConfig = mapConfig;
         _signalBus = signalBus;
+        if(_mapConfig.MapSprite!=null)
         button.image.sprite = _mapConfig.MapSprite;
         _spriteState = button.colors;
         button.onClick.AddListener(() =>

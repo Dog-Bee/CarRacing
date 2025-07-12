@@ -60,6 +60,7 @@ public class MapBuyPopUp : MonoBehaviour
         buyButton.onClick.AddListener(() =>
         {
             _mapConfig.isUnlocked = true;
+            _coinService.SpendCoins(_mapConfig.price);
             _signalBus.Fire(new MapUnlockSignal(_mapConfig));
             Deactivate();
         });

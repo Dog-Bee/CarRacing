@@ -29,7 +29,7 @@ public class GlobalCoinUpdater : MonoBehaviour
 
     private void OnCoinChanged(CoinChangedSignal signal)
     {
-        coinText.text = $"<sprite name={TOKEN_NAME} {signal.Coins}>";
+        coinText.text = $"<sprite name={TOKEN_NAME}> {signal.Coins}";
     }
     
 }

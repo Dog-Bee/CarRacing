@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6a4622d94ab38b4b9e01e6c28d07ea4, type: 3}
-  m_Name: MapCollectionData
+  m_Name: MapCollectionData 1
   m_EditorClassIdentifier: 
   mapConfigs:
   - isUnlocked: 1
@@ -34,7 +34,7 @@ MonoBehaviour:
     MapSprite: {fileID: 21300000, guid: ace4f01a5f7ac3b458868434d4c05f0c, type: 3}
     SceneName: Map 5 Isometric
   - isUnlocked: 0
-    price: 1000
+    price: 100
     MapSprite: {fileID: 21300000, guid: 849ea94239a7af04ea9431ba9ba49921, type: 3}
     SceneName: Map 6 Isometric
   - isUnlocked: 0

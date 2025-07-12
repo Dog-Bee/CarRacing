@@ -209,6 +209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3000167527255711073}
   - component: {fileID: 226685119585720505}
+  - component: {fileID: 3688999518394861706}
   m_Layer: 0
   m_Name: Kart
   m_TagString: Untagged
@@ -264,6 +265,31 @@ MonoBehaviour:
   boostTubeParticles:
   - {fileID: 5971449291586370339}
   - {fileID: 1260640286958707810}
+--- !u!114 &3688999518394861706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2443836374748116187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2041d92303c0fb34a92c0583f5cca120, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vehicleColorConfig: {fileID: 11400000, guid: cb3e4973069c632448f79df46446c23a, type: 2}
+  bodyMaterials:
+  - {fileID: 1619465134135641156}
+  wheelMaterials:
+  - {fileID: 9217233196350025972}
+  - {fileID: 3040929783201428641}
+  - {fileID: 1145425261845463944}
+  - {fileID: 6448887539322688474}
+  steeringMaterials:
+  - {fileID: 7312976920252719045}
+  tubeMaterials:
+  - {fileID: 475680235216282509}
+  - {fileID: 7495527144984668074}
 --- !u!1 &2739131100885550202
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,7 +601,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 2
 --- !u!135 &1720331507840850490
 SphereCollider:

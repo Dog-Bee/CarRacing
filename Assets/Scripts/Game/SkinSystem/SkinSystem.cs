@@ -8,7 +8,7 @@ public class SkinSystem : MonoBehaviour
 {
     [SerializeField] private VehicleColorConfig vehicleColorConfig;
     [SerializeField] private SkinPopUp skinPopUp;
-    [SerializeField] private SkinChanger skinChanger;
+    [SerializeField] private ASkinChanger aSkinChanger;
     
     private SignalBus _signalBus;
 
@@ -49,7 +49,7 @@ public class SkinSystem : MonoBehaviour
         }
         
         vehicleColorConfig.SaveColor(config);
-        skinChanger.UpdateSkin(config);
+        aSkinChanger.UpdateSkin(config);
         _signalBus.Fire(new ColorChangedSignal(config));
 
     }

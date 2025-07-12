@@ -3,13 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SkinChanger : MonoBehaviour
+public abstract class ASkinChanger : MonoBehaviour
 {
-    [SerializeField] private VehicleColorConfig vehicleColorConfig;
-    [SerializeField] private List<MeshRenderer> bodyMaterials;
-    [SerializeField] private List<MeshRenderer> wheelMaterials;
-    [SerializeField] private List<MeshRenderer> steeringMaterials;
-    [SerializeField] private List<MeshRenderer> tubeMaterials;
+    [SerializeField] protected VehicleColorConfig vehicleColorConfig;
+    [SerializeField] protected List<MeshRenderer> bodyMaterials;
+    [SerializeField] protected List<MeshRenderer> wheelMaterials;
+    [SerializeField] protected List<MeshRenderer> steeringMaterials;
+    [SerializeField] protected List<MeshRenderer> tubeMaterials;
 
 
     private void Start()
@@ -17,14 +17,7 @@ public class SkinChanger : MonoBehaviour
         Init();
     }
 
-    private void Init()
-    {
-        UpdateSkin(vehicleColorConfig.BodyColor.Value);
-        UpdateSkin(vehicleColorConfig.WheelColor.Value);
-        UpdateSkin(vehicleColorConfig.TubeColor.Value);
-        UpdateSkin(vehicleColorConfig.SteeringColor.Value);
-    }
-
+    protected abstract void Init();
     public void UpdateSkin(ColorConfig config)
     {
         switch (config.PartType)

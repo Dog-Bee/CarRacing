@@ -12,9 +12,24 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 7c2da82b31023f6419474c6c652fecaa
   - enabled: 1
+    path: Assets/Scenes/Map 1 Isometric.unity
+    guid: 5974b995644b9c94882a8d063dbe8457
+  - enabled: 1
     path: Assets/Scenes/Map 2 Isometric.unity
     guid: 0c737656736ea8c468d58eedae96eba7
   - enabled: 1
-    path: Assets/Scenes/Map 1 Isometric.unity
-    guid: 5974b995644b9c94882a8d063dbe8457
+    path: Assets/Scenes/Map 3 Isometric.unity
+    guid: 5fdc36776aa334b4da5f33543d9883e4
+  - enabled: 1
+    path: Assets/Scenes/Map 4 Isometric.unity
+    guid: 87a76e685065411439438f81cb230e5b
+  - enabled: 1
+    path: Assets/Scenes/Map 5 Isometric.unity
+    guid: da1a5ef66a72e2a44aaaa0eeb91ba836
+  - enabled: 1
+    path: Assets/Scenes/Map 6 Isometric.unity
+    guid: 6b3bffcd18264434287dfb251665b2f1
+  - enabled: 1
+    path: Assets/Scenes/Map 7 Isometric.unity
+    guid: 58875bb3d72d9284a98e315264ea3726
   m_configObjects: {}

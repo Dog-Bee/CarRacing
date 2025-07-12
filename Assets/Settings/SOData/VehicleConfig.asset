@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MaxSpeed>k__BackingField: 200
   <Acceleration>k__BackingField: 120
-  <TurnSpeed>k__BackingField: 20
+  <TurnSpeed>k__BackingField: 30.1
   <Drag>k__BackingField: 3
   <Gravity>k__BackingField: 60
   <SideFriction>k__BackingField: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
   <WheelRotationAngle>k__BackingField: 25
   <TiltAmount>k__BackingField: 10
   <SteeringWheelRotationSpeed>k__BackingField: 40
-  <FollowOffset>k__BackingField: {x: 0, y: 0, z: 0}
+  <FollowOffset>k__BackingField: {x: 0, y: 1.86, z: 0}
   <GroundMask>k__BackingField:
     serializedVersion: 2
     m_Bits: 8

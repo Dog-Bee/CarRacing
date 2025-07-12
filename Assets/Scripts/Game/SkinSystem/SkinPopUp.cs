@@ -49,7 +49,7 @@ public class SkinPopUp : MonoBehaviour
         colorImage.color = _config.Color;
     }
 
-    private void Deactivate()
+    public void Deactivate()
     {
         canvasGroup.DOFade(0,fadeDuration).SetEase(Ease.Linear);
         canvasGroup.interactable = false;
@@ -63,6 +63,7 @@ public class SkinPopUp : MonoBehaviour
         buyButton.onClick.AddListener(() =>
         {
             _config.IsUnlocked = true;
+            _coinService.SpendCoins(_config.Price);
             _signalBus.Fire(new TryColorChangeSignal(_config));
             Deactivate();
         });
