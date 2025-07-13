@@ -8,7 +8,7 @@ public class BotRaceTracker : ARaceTracker
     {
         _checkpointBehaviour = checkpointBehaviour;
         _currentCheckpoint = _checkpointBehaviour.FirstBotCheckpoint;
-        _racePathService = new RacePathService(_checkpointBehaviour.PlayerCheckpoints);
+        _racePathService = new RacePathService(_checkpointBehaviour.BotCheckpoints);
         _leaderboardService = leaderboardService;
         _leaderboardService.Register(this);
         Name = "Bot";

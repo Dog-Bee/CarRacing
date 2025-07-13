@@ -4739,7 +4739,7 @@ MonoBehaviour:
   leaderboardTexts:
   - {fileID: 3954166378112547465}
   - {fileID: 6365366977275164369}
-  updateInterval: 2
+  updateInterval: 0.5
 --- !u!1 &7178822091509921932
 GameObject:
   m_ObjectHideFlags: 0
