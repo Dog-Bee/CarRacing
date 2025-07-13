@@ -16,7 +16,7 @@ public class GlobalCoinUpdater : MonoBehaviour
     {
         _signalBus = signalBus;
         
-        coinText.text = $"<sprite name={TOKEN_NAME}> {coinService.Coins}";
+        coinText.text = $"<sprite name={TOKEN_NAME}>{coinService.Coins}";
         
         _signalBus.Subscribe<CoinChangedSignal>(OnCoinChanged);
     }
@@ -29,7 +29,7 @@ public class GlobalCoinUpdater : MonoBehaviour
 
     private void OnCoinChanged(CoinChangedSignal signal)
     {
-        coinText.text = $"<sprite name={TOKEN_NAME}> {signal.Coins}";
+        coinText.text = $"<sprite name={TOKEN_NAME}>{signal.Coins}";
     }
     
 }

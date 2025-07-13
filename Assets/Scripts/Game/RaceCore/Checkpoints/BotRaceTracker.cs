@@ -11,7 +11,7 @@ public class BotRaceTracker : ARaceTracker
         _racePathService = new RacePathService(_checkpointBehaviour.BotCheckpoints);
         _leaderboardService = leaderboardService;
         _leaderboardService.Register(this);
-        Name = "BotRaceTracker";
+        Name = "Bot";
         IsPlayer = false;
     }
     

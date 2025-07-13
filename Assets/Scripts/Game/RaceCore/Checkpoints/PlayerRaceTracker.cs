@@ -13,7 +13,7 @@ public class PlayerRaceTracker : ARaceTracker
         _leaderboardService = leaderboardService;
         _leaderboardService.Register(this);
         _signalBus = signalBus;
-        Name = "PlayerRaceTracker";
+        Name = "Player";
         IsPlayer = true;
     }
     
