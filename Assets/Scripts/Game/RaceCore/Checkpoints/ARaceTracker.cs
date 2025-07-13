@@ -19,6 +19,7 @@ public abstract class ARaceTracker : MonoBehaviour,IRaceProgress
     public float ReachDistance;
     public bool IsStop { get; protected set; }
     public float TotalProgress => _lap*_racePathService.TotalLength+_racePathService.GetProgressAlongPath(transform.position, _index);
+    public float TimeTrack { get; protected set;}
     public string Name { get; protected set; }
     public bool IsPlayer { get; protected set; }
 
@@ -27,6 +28,11 @@ public abstract class ARaceTracker : MonoBehaviour,IRaceProgress
         if (Vector3.Distance(transform.position, _currentCheckpoint) < ReachDistance)
         {
             OnTrigger();
+        }
+
+        if (!IsStop)
+        {
+            TimeTrack += Time.deltaTime;
         }
     }
     protected virtual void OnTrigger()
