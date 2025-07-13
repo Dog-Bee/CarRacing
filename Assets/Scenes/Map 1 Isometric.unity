@@ -2479,37 +2479,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 598947847}
     m_Modifications:
-    - target: {fileID: 98696410102618069, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 2024254195342140844, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_Name
       value: BotCheckpoint (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.data[0]
-      value: 
-      objectReference: {fileID: 193964298}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.data[1]
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2559,11 +2531,6 @@ PrefabInstance:
 --- !u!4 &193964297 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-  m_PrefabInstance: {fileID: 193964296}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &193964298 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2024254195342140844, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
   m_PrefabInstance: {fileID: 193964296}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &193964299 stripped
@@ -13836,37 +13803,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 598947847}
     m_Modifications:
-    - target: {fileID: 98696410102618069, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 2024254195342140844, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_Name
       value: BotCheckpoint (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.data[0]
-      value: 
-      objectReference: {fileID: 1006466341}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.data[1]
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13916,11 +13855,6 @@ PrefabInstance:
 --- !u!4 &1006466340 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-  m_PrefabInstance: {fileID: 1006466339}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1006466341 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2024254195342140844, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
   m_PrefabInstance: {fileID: 1006466339}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1006466342 stripped
@@ -14415,37 +14349,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 598947847}
     m_Modifications:
-    - target: {fileID: 98696410102618069, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 2024254195342140844, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_Name
       value: BotCheckpoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.data[0]
-      value: 
-      objectReference: {fileID: 1060956273}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.data[1]
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14495,11 +14401,6 @@ PrefabInstance:
 --- !u!4 &1060956272 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-  m_PrefabInstance: {fileID: 1060956271}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1060956273 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2024254195342140844, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
   m_PrefabInstance: {fileID: 1060956271}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1060956274 stripped
@@ -15592,37 +15493,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 598947847}
     m_Modifications:
-    - target: {fileID: 98696410102618069, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 2024254195342140844, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_Name
       value: BotCheckpoint (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.data[0]
-      value: 
-      objectReference: {fileID: 1145144201}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.data[1]
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15672,11 +15545,6 @@ PrefabInstance:
 --- !u!4 &1145144200 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-  m_PrefabInstance: {fileID: 1145144199}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1145144201 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2024254195342140844, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
   m_PrefabInstance: {fileID: 1145144199}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1145144202 stripped
@@ -16406,37 +16274,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 598947847}
     m_Modifications:
-    - target: {fileID: 98696410102618069, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 2024254195342140844, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_Name
       value: BotCheckpoint (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.data[0]
-      value: 
-      objectReference: {fileID: 1188451369}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.data[1]
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16486,11 +16326,6 @@ PrefabInstance:
 --- !u!4 &1188451368 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-  m_PrefabInstance: {fileID: 1188451367}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1188451369 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2024254195342140844, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
   m_PrefabInstance: {fileID: 1188451367}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1188451370 stripped
@@ -17470,37 +17305,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 598947847}
     m_Modifications:
-    - target: {fileID: 98696410102618069, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 2024254195342140844, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_Name
       value: BotCheckpoint (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.data[0]
-      value: 
-      objectReference: {fileID: 1260334369}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.data[1]
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17552,11 +17359,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
   m_PrefabInstance: {fileID: 1260334367}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1260334369 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2024254195342140844, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-  m_PrefabInstance: {fileID: 1260334367}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1260334370 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
@@ -17576,37 +17378,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 598947847}
     m_Modifications:
-    - target: {fileID: 98696410102618069, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 2024254195342140844, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_Name
       value: BotCheckpoint (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.data[0]
-      value: 
-      objectReference: {fileID: 1260818020}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.data[1]
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17656,11 +17430,6 @@ PrefabInstance:
 --- !u!4 &1260818019 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-  m_PrefabInstance: {fileID: 1260818018}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1260818020 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2024254195342140844, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
   m_PrefabInstance: {fileID: 1260818018}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1260818021 stripped
@@ -22042,37 +21811,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 598947847}
     m_Modifications:
-    - target: {fileID: 98696410102618069, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 2024254195342140844, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_Name
       value: BotCheckpoint (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.data[0]
-      value: 
-      objectReference: {fileID: 1616734240}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.data[1]
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22122,11 +21863,6 @@ PrefabInstance:
 --- !u!4 &1616734239 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-  m_PrefabInstance: {fileID: 1616734238}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1616734240 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2024254195342140844, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
   m_PrefabInstance: {fileID: 1616734238}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1616734241 stripped
@@ -22352,37 +22088,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 598947847}
     m_Modifications:
-    - target: {fileID: 98696410102618069, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 2024254195342140844, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_Name
       value: BotCheckpoint (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.data[0]
-      value: 
-      objectReference: {fileID: 1625132201}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.data[1]
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22432,11 +22140,6 @@ PrefabInstance:
 --- !u!4 &1625132200 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-  m_PrefabInstance: {fileID: 1625132199}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1625132201 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2024254195342140844, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
   m_PrefabInstance: {fileID: 1625132199}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1625132202 stripped
@@ -27831,37 +27534,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 598947847}
     m_Modifications:
-    - target: {fileID: 98696410102618069, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 2024254195342140844, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_Name
       value: BotCheckpoint (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.data[0]
-      value: 
-      objectReference: {fileID: 1955851833}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.data[1]
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27911,11 +27586,6 @@ PrefabInstance:
 --- !u!4 &1955851832 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-  m_PrefabInstance: {fileID: 1955851831}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1955851833 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2024254195342140844, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
   m_PrefabInstance: {fileID: 1955851831}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1955851834 stripped
@@ -28480,37 +28150,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 598947847}
     m_Modifications:
-    - target: {fileID: 98696410102618069, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 2024254195342140844, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_Name
       value: BotCheckpoint (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.data[0]
-      value: 
-      objectReference: {fileID: 1983801134}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.data[1]
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28560,11 +28202,6 @@ PrefabInstance:
 --- !u!4 &1983801133 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-  m_PrefabInstance: {fileID: 1983801132}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1983801134 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2024254195342140844, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
   m_PrefabInstance: {fileID: 1983801132}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1983801135 stripped
@@ -30913,37 +30550,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 598947847}
     m_Modifications:
-    - target: {fileID: 98696410102618069, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 2024254195342140844, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_Name
       value: BotCheckpoint (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.data[0]
-      value: 
-      objectReference: {fileID: 2139452709}
-    - target: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: targetList.Array.data[1]
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30993,11 +30602,6 @@ PrefabInstance:
 --- !u!4 &2139452708 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-  m_PrefabInstance: {fileID: 2139452707}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2139452709 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2024254195342140844, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
   m_PrefabInstance: {fileID: 2139452707}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &2139452710 stripped

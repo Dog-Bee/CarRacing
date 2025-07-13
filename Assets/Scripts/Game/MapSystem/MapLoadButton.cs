@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +10,10 @@ public class MapLoadButton : MonoBehaviour
 {
     [SerializeField] private Button button;
     [SerializeField] private Image lockImage;
+    [SerializeField] private TextMeshProUGUI priceText;
+    
+    private const string TOKEN_NAME = "Token";
+    
     private MapConfig _mapConfig;
     private ColorBlock _spriteState;
     
@@ -23,6 +28,8 @@ public class MapLoadButton : MonoBehaviour
         if(_mapConfig.MapSprite!=null)
         button.image.sprite = _mapConfig.MapSprite;
         _spriteState = button.colors;
+        priceText.gameObject.SetActive(!_mapConfig.isUnlocked);
+        priceText.text = $"<sprite name={TOKEN_NAME}>{_mapConfig.price}";
         button.onClick.AddListener(() =>
         {
             _signalBus.Fire(new TryMapLoadSignal(_mapConfig));

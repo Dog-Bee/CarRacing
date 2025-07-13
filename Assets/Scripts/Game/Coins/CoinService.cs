@@ -15,7 +15,7 @@ public class CoinService
 
     public CoinService()
     {
-        saveCoins = new("Coins", 9999);
+        saveCoins = new("Coins", 999999);
         Debug.Log($"Coin service init coin value: {saveCoins.Value}");
         _coins = saveCoins.Value;
     }
