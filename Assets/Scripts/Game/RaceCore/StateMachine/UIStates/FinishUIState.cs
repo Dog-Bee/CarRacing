@@ -34,8 +34,8 @@ public class FinishUIState : AGameplayUIState
 
     public override void EnterState()
     {
-        Debug.Log($"Player place {_leaderboardService.GetPlayerPlace()}");
-        bool isWin = _leaderboardService.GetPlayerPlace() == 0;
+        Debug.Log($"Player place {_leaderboardService.GetFinishPlayerPlace()}");
+        bool isWin = _leaderboardService.GetFinishPlayerPlace() == 0;
         
         if (isWin)
         {

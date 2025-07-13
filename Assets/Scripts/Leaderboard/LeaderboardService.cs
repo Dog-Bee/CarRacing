@@ -24,6 +24,11 @@ public class LeaderboardService
     {
         return SortedCompetitors.IndexOf(SortedCompetitors.FirstOrDefault(s=>s.IsPlayer));
     }
+
+    public int GetFinishPlayerPlace()
+    {
+        return TimeSortedCompetitors.IndexOf(TimeSortedCompetitors.FirstOrDefault(s=>s.IsPlayer));
+    }
     
 
     

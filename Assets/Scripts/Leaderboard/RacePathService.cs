@@ -18,12 +18,10 @@ public class RacePathService
         
         total += Vector3.Distance(_points[^1], _points[0]);
         _accumulatedDistances[0] = total;
-        Debug.Log($"Accumulated distances index 0: {_accumulatedDistances[0]}");
         for (int i = 1; i < _points.Count; i++)
         {
             total += Vector3.Distance(_points[i-1], _points[i]);
             _accumulatedDistances[i] = total;
-            Debug.Log($"Accumulated distances index {i}: {_accumulatedDistances[i]}");
         }
         TotalLength = total;
         Debug.Log("Total length: " + TotalLength);

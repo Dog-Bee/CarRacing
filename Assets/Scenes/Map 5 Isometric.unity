@@ -757,6 +757,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2142774748}
     m_Modifications:
     - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
       propertyPath: m_Name
       value: Checkpoint (7)
       objectReference: {fileID: 0}
@@ -837,9 +841,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: BotCheckpoint
       objectReference: {fileID: 0}
+    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -30
+      value: -29.967552
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -847,7 +855,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 70
+      value: 69.93505
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1782,9 +1790,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: BotCheckpoint (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -70
+      value: -69.96755
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1792,7 +1804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 70
+      value: 9.935051
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2780,83 +2792,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6159428277088928044, guid: 82d6944486d91ef4dbe7b834b747ed24, type: 3}
   m_PrefabInstance: {fileID: 204979638}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &205784316
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 598947847}
-    m_Modifications:
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_Name
-      value: BotCheckpoint (15)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -30
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
---- !u!4 &205784317 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-  m_PrefabInstance: {fileID: 205784316}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &205784318 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-  m_PrefabInstance: {fileID: 205784316}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dadc65fd21d150349ad7808ae6cd2460, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &209549820
 GameObject:
   m_ObjectHideFlags: 0
@@ -3241,83 +3176,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6312054323124956409, guid: 9ed328f303d5366418610d2ef4f9693a, type: 3}
   m_PrefabInstance: {fileID: 222673549}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &237409534
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 598947847}
-    m_Modifications:
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
-    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_Name
-      value: BotCheckpoint (16)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -30
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
---- !u!4 &237409535 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-  m_PrefabInstance: {fileID: 237409534}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &237409536 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3241191274112833852, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
-  m_PrefabInstance: {fileID: 237409534}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dadc65fd21d150349ad7808ae6cd2460, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &238781010
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4696,6 +4554,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2142774748}
     m_Modifications:
     - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
       propertyPath: m_Name
       value: Checkpoint (4)
       objectReference: {fileID: 0}
@@ -5929,6 +5791,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2142774748}
     m_Modifications:
     - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
       propertyPath: m_Name
       value: Checkpoint (5)
       objectReference: {fileID: 0}
@@ -6101,6 +5967,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2142774748}
     m_Modifications:
     - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
       propertyPath: m_Name
       value: Checkpoint (10)
       objectReference: {fileID: 0}
@@ -6251,9 +6121,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: BotCheckpoint (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20
+      value: 0.032449722
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6261,7 +6135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 130
+      value: 109.93506
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6609,9 +6483,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: BotCheckpoint (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -90
+      value: -19.967552
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6619,7 +6497,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 130
+      value: 129.93506
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7504,8 +7382,6 @@ Transform:
   - {fileID: 2100503083}
   - {fileID: 1191759698}
   - {fileID: 931076110}
-  - {fileID: 205784317}
-  - {fileID: 237409535}
   m_Father: {fileID: 1821324141}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &613325016
@@ -8831,6 +8707,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2142774748}
     m_Modifications:
+    - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
       propertyPath: m_Name
       value: Checkpoint (14)
@@ -10906,9 +10786,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: BotCheckpoint (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -100
+      value: -109.96755
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10916,7 +10800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10
+      value: 109.93505
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11950,9 +11834,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: BotCheckpoint (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20
+      value: -29.96755
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11960,7 +11848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -30
+      value: 39.93505
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12271,6 +12159,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2142774748}
     m_Modifications:
     - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
       propertyPath: m_Name
       value: Checkpoint (9)
       objectReference: {fileID: 0}
@@ -12562,6 +12454,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2142774748}
     m_Modifications:
+    - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
       propertyPath: m_Name
       value: Checkpoint (2)
@@ -14083,6 +13979,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2142774748}
     m_Modifications:
     - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
       propertyPath: m_Name
       value: Checkpoint (12)
       objectReference: {fileID: 0}
@@ -14163,9 +14063,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: BotCheckpoint (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -29.96755
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14173,7 +14077,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -30
+      value: -10.064949
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15098,6 +15002,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2142774748}
     m_Modifications:
     - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
       propertyPath: m_Name
       value: Checkpoint (3)
       objectReference: {fileID: 0}
@@ -15600,6 +15508,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2142774748}
     m_Modifications:
     - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
       propertyPath: m_Name
       value: Checkpoint
       objectReference: {fileID: 0}
@@ -15816,9 +15728,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: BotCheckpoint (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -110
+      value: -89.96755
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15826,7 +15742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 129.93506
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16112,9 +16028,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: BotCheckpoint (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 10.03245
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16122,7 +16042,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 110
+      value: -10.064949
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17942,9 +17862,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: BotCheckpoint (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -80
+      value: -109.96755
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17952,7 +17876,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10
+      value: 9.935051
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -19095,8 +19019,6 @@ MonoBehaviour:
   - {fileID: 2100503084}
   - {fileID: 1191759699}
   - {fileID: 931076111}
-  - {fileID: 205784318}
-  - {fileID: 237409536}
   finishPositions:
   - {fileID: 1981292489}
   - {fileID: 2084748884}
@@ -19258,6 +19180,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2142774748}
     m_Modifications:
     - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
       propertyPath: m_Name
       value: Checkpoint (1)
       objectReference: {fileID: 0}
@@ -19400,6 +19326,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2142774748}
     m_Modifications:
+    - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
       propertyPath: m_Name
       value: Checkpoint (8)
@@ -19666,9 +19596,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: BotCheckpoint (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -70
+      value: -69.96755
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -19676,7 +19610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 80
+      value: 69.93505
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -19743,9 +19677,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: BotCheckpoint (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -70
+      value: -89.96755
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -19753,7 +19691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: -10.064949
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20100,6 +20038,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2142774748}
     m_Modifications:
+    - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
       propertyPath: m_Name
       value: Checkpoint (11)
@@ -22821,6 +22763,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2142774748}
     m_Modifications:
     - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
       propertyPath: m_Name
       value: Checkpoint (6)
       objectReference: {fileID: 0}
@@ -23767,9 +23713,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: BotCheckpoint (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -50
+      value: -49.967552
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -23777,7 +23727,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 90
+      value: 89.93505
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -25113,9 +25063,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: BotCheckpoint (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -110
+      value: -49.967552
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -25123,7 +25077,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 110
+      value: 129.93506
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -25214,6 +25168,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2142774748}
     m_Modifications:
     - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 2912709800648042440, guid: 25376590b70fba84ba215637a0d7c107, type: 3}
       propertyPath: m_Name
       value: Checkpoint (13)
       objectReference: {fileID: 0}
@@ -25294,9 +25252,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: BotCheckpoint (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2912709800648042440, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10
+      value: -9.96755
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -25304,7 +25266,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10
+      value: -30.064949
       objectReference: {fileID: 0}
     - target: {fileID: 5219891979424711421, guid: cb01d553b60b0f04e9506449abd596a1, type: 3}
       propertyPath: m_LocalRotation.w

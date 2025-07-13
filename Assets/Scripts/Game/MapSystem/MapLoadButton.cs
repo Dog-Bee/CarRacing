@@ -43,6 +43,7 @@ public class MapLoadButton : MonoBehaviour
         _mapConfig = mapConfig;
         _spriteState.normalColor = _mapConfig.isUnlocked ? Color.white : _spriteState.disabledColor;
         button.colors = _spriteState;
+        priceText.gameObject.SetActive(!_mapConfig.isUnlocked);
         lockImage.gameObject.SetActive(!_mapConfig.isUnlocked);
 
     }

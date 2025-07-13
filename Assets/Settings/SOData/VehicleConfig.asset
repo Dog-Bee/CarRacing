@@ -18,12 +18,12 @@ MonoBehaviour:
   <Drag>k__BackingField: 3
   <Gravity>k__BackingField: 60
   <SideFriction>k__BackingField: 0
-  <ReachDistance>k__BackingField: 10
+  <ReachDistance>k__BackingField: 15
   <WheelRotationSpeed>k__BackingField: 360
   <WheelRotationAngle>k__BackingField: 25
   <TiltAmount>k__BackingField: 10
   <SteeringWheelRotationSpeed>k__BackingField: 40
-  <FollowOffset>k__BackingField: {x: 0, y: 1.86, z: 0}
+  <FollowOffset>k__BackingField: {x: 0, y: 1.42, z: 0}
   <GroundMask>k__BackingField:
     serializedVersion: 2
     m_Bits: 8
