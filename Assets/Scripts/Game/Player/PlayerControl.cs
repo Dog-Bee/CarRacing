@@ -13,7 +13,8 @@ public class PlayerController : MonoBehaviour,IGameStateUser
 
     private PlayerInput _input;
     private VehicleConfig _config;
-
+    private BoostService _boostService;
+    
     private float _targetSpeed, _currentSpeed,_boostSpeed;
     private float _targetRotation, _currentRotation;
     private bool _isGrounded;
@@ -22,6 +23,10 @@ public class PlayerController : MonoBehaviour,IGameStateUser
     public float CurrentSpeed => _currentSpeed;
     public float MaxSpeed => _config.Acceleration *3;
     public float BaseSpeed => _config.Acceleration * 2;
+
+    public float BoostCount => _boostService.BoostCount;
+    public float BoostMaxCount => _boostService.BoostMaxCount;
+    public bool BoostAvailability => _boostService.BoostAvailability();
     
     [Inject] 
     private void Construct(PlayerInput input, VehicleConfig config, GameplayObserver observer)
@@ -32,6 +37,7 @@ public class PlayerController : MonoBehaviour,IGameStateUser
         rigidBody.drag = _config.Drag;
         view.Init(_config.WheelRotationSpeed, _config.TiltAmount,_config.WheelRotationAngle);
         raceTracker.ReachDistance = _config.ReachDistance;
+        _boostService = new BoostService(_config.BoostMaxCount, _config.BoostUsage,_config.BoostDelay);
         observer.Register(this);
     }
 
@@ -43,9 +49,11 @@ public class PlayerController : MonoBehaviour,IGameStateUser
     private void Update()
     {
         if (_gamePlayState != GamePlayState.Loop) return;
+        _boostService.Update();
         Calculations();
         view.UpdateView(_input.Throttle, _input.Steering, rigidBody.velocity.magnitude);
-        view.Boost(_input.IsDrifting);
+        
+        view.Boost(_boostService.IsBoosting);
     }
 
     private void FixedUpdate()
@@ -91,7 +99,7 @@ public class PlayerController : MonoBehaviour,IGameStateUser
 
     private void Calculations()
     {
-        _boostSpeed = _input.IsDrifting? _config.Acceleration:0;
+        _boostSpeed = _boostService.TryBoost(_input.IsDrifting)? _config.Acceleration:0;
         _targetSpeed = _input.Throttle * _config.Acceleration + Mathf.Abs(_input.Steering)*_config.Acceleration/2+_boostSpeed;
         _targetRotation = _input.Steering * _config.TurnSpeed;
 

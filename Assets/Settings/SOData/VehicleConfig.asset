@@ -19,6 +19,9 @@ MonoBehaviour:
   <Gravity>k__BackingField: 60
   <SideFriction>k__BackingField: 0
   <ReachDistance>k__BackingField: 15
+  <BoostMaxCount>k__BackingField: 10
+  <BoostUsage>k__BackingField: 10
+  <BoostDelay>k__BackingField: 3
   <WheelRotationSpeed>k__BackingField: 360
   <WheelRotationAngle>k__BackingField: 25
   <TiltAmount>k__BackingField: 10
