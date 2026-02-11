@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: Thunder-BoldLC SDF
+  m_Name: Thunder-BoldLC Outline
   m_EditorClassIdentifier: 
-  hashCode: -1972997694
+  hashCode: -755566221
   material: {fileID: 9127665887447284066}
-  materialHashCode: 798952354
+  materialHashCode: 1353786611
   m_Version: 1.1.0
   m_SourceFontFileGUID: d61cde1d9c8027749aed687c5d7f3a83
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: d61cde1d9c8027749aed687c5d7f3a83, type: 3}
@@ -1288,7 +1288,7 @@ Material:
     - _OutlineSoftness: 0
     - _OutlineUVSpeedX: 0
     - _OutlineUVSpeedY: 0
-    - _OutlineWidth: 0
+    - _OutlineWidth: 0.15
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
     - _ScaleRatioA: 0.9

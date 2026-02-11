@@ -20,7 +20,7 @@ MonoBehaviour:
   <SideFriction>k__BackingField: 0
   <ReachDistance>k__BackingField: 15
   <BoostMaxCount>k__BackingField: 10
-  <BoostUsage>k__BackingField: 10
+  <BoostUsage>k__BackingField: 5
   <BoostDelay>k__BackingField: 3
   <WheelRotationSpeed>k__BackingField: 360
   <WheelRotationAngle>k__BackingField: 25

@@ -30410,6 +30410,30 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1445271158}
+    - target: {fileID: 1408977202905447828, guid: 2cfd806ec2916cf49ac46a6f00a98b9a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408977202905447828, guid: 2cfd806ec2916cf49ac46a6f00a98b9a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408977202905447828, guid: 2cfd806ec2916cf49ac46a6f00a98b9a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408977202905447828, guid: 2cfd806ec2916cf49ac46a6f00a98b9a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 96.975
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408977202905447828, guid: 2cfd806ec2916cf49ac46a6f00a98b9a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1492096115587367269, guid: 2cfd806ec2916cf49ac46a6f00a98b9a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1677713335534033812, guid: 2cfd806ec2916cf49ac46a6f00a98b9a, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
